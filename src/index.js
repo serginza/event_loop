@@ -85,9 +85,8 @@ function microtask1() {
 
         setTimeout(() => {
             document.body.style.background = "aqua";
-            document.getElementsByClassName("button3").innerText = "Ура! Кнопка переименована после вполнения микрозадачи!";
             console.log("1_Body was recolored!");
-        }, 0)
+        }, 0);
 }
 
 //Второй пункт задания
