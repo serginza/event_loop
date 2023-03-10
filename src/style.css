@@ -1,0 +1,29 @@
+body {
+    background: PaleGreen;
+}
+
+.buttons {
+    max-width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.button {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
