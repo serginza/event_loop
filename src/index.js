@@ -107,7 +107,7 @@ function microtask3() {
     });
 
     setTimeout(() => {
-        document.querySelector(".button3").textContent = "Ура! Кнопка переименована после вполнения микрозадачи!"
+        document.querySelector(".button3").textContent = "Ура! Кнопка переименована после выполнения микрозадачи!"
         console.log("3_Button was renamed!");
     }, 0)
 }
