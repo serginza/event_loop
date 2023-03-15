@@ -3,21 +3,13 @@
 console.log("Task #1(sum through closure):")
 
 //Решение с неограниченным количеством аргументов
-// function func(a) {
-//     return function(b) {
-//         return b ? func(a + b) : a;
-//     }
-// }
-
 function func(a) {
-    return (b) => {
-        return (c) => {
-            return a + b + c;
-        };
-    };
+    return function(b) {
+        return b ? func(a + b) : a;
+    }
 }
 
-console.log("Sum(2)(3)(5) = " + func(2)(3)(5));  // 10
+console.log("Sum(2)(3)(5) = " + { toString: func(2)(3)(5) });  // 10
 console.log("__________________________")
 
 // Task #2
